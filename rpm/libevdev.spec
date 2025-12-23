@@ -10,7 +10,7 @@ Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  git-core
 BuildRequires:  meson gcc
-BuildRequires:  python3 python3-rpm-macros
+BuildRequires:  python python3-rpm-macros
 
 %description
 %{name} is a library to wrap kernel evdev devices and provide a proper API
