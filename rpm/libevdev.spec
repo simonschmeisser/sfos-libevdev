@@ -6,7 +6,7 @@ Summary:        Kernel Evdev Device Wrapper Library
 # SPDX
 License:        MIT
 URL:            http://www.freedesktop.org/wiki/Software/libevdev
-Source0:        http://www.freedesktop.org/software/%{name}/%{name}-%{version}.tar.xz
+Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  git-core
 BuildRequires:  meson gcc
@@ -31,7 +31,7 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 Utilities to handle and/or debug evdev devices.
 
 %prep
-%autosetup -S git
+%autosetup -S git -p 1 -n %{name}-%{version}/%{name}
 # Replace whatever the source uses with the approved call
 %py3_shebang_fix $(git grep -l  '#!/usr/bin/.*python3')
 
