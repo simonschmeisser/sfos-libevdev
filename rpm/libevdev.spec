@@ -42,7 +42,7 @@ Utilities to handle and/or debug evdev devices.
 %install
 %meson_install
 
-%ldconfig_scriptlets
+# %ldconfig_scriptlets
 
 %files
 %doc COPYING
