@@ -33,7 +33,7 @@ Utilities to handle and/or debug evdev devices.
 %prep
 %autosetup -S git -p 1 -n %{name}-%{version}/%{name}
 # Replace whatever the source uses with the approved call
-%py3_shebang_fix $(git grep -l  '#!/usr/bin/.*python3')
+# %py3_shebang_fix $(git grep -l  '#!/usr/bin/.*python3')
 
 %build
 %meson -Dtests=disabled -Ddocumentation=disabled -Dcoverity=false
